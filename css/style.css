@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #F2F3F4;
+}
+
+.app {    
+    width: 100%;
+}
+
+.app-body {
+    width: 30%;
+    margin: 20px 0 20px 20%;
+    text-align: left;
+    float: left;
+}
+
+.app-list {
+    width: 30%;
+    margin: 50px 0;
+    float: left;
+}
+
+.app-btn__block {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.app-btn_link {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: blue;
+    cursor: pointer;
+    margin: 20px 10px 40px 0;
+    outline: none;
+}
+
+details {
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+}
+
+.app-body__star, .app-body__star1 {
+    position: relative;
+    line-height: 40px;
+    top: -85px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.app-body__star {
+    top: -75px;
+}
+
+.app-body__star_yellow {
+    background: yellow;
+}
+
+.app-body__modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(128, 128, 128, .5); 
+    z-index: 3;
+}
+
+.app-body__image {
+    margin: 10px 0;
+}
+
+.app-body__image_large {
+    width: 180px;
+}
+
+.app-list__div {
+    display: inline-block;
+}
+
+.app-body__item1, .app-body__item2, .app-body__item3 {
+    margin-top: 10px;
+}
+
+.app-body__item1 {
+    margin-top: 25px;
+}
+
+.app-body__item2 {
+    margin-left: 10px;
+}
+
+.app-body__item3 {
+    margin-left: 20px;
+}
+
+.app-body__image_effect {
+    position: relative;
+    transform: scale(2.2);
+   -webkit-transition: transform 0.3s ease-in-out;
+   z-index: 9999;
+}
+
+.app-body__title_effect {
+    transform: scale(1.2);
+   -webkit-transition: transform 0.5s ease-in-out;
+   background: none;
+}
+
+.app-body__modal_hide {
+    display: none;
+}
+
+/* ------- @media ------- */
+
+@media (max-width : 768px) {
+    .app-list {
+        width: 80%;
+        margin: 20px 10%;        
+    }
+    .app-body {
+        width: 80%;
+        margin: 20px 10%;
+        text-align: left;
+    }
+}
+
